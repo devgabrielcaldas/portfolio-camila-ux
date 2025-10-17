@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camila Ventura — UX/UI Designer</title>
+
+  <!-- Fonte Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <span class="brand__title">Camila Ventura</span>
+        <span class="brand__subtitle">UI/UX Designer</span>
+      </a>
+
+      <nav class="nav" aria-label="principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu" class="nav__list">
+          <li><a class="is-active" href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#projetos">Portfólio</a></li>
+          <li><a href="#contato">Entre em contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__photo reveal">
+          <img src="assets/img/camila.png" alt="Camila Ventura" />
+        </div>
+
+        <div class="hero__text reveal">
+          <p class="kicker">Olá, sou</p>
+          <h1 id="hero-title"><span>Camila Ventura</span></h1>
+          <p class="role">UI/UX Designer</p>
+
+          <p class="hero__desc">
+            Sou apaixonada por transformar ideias em experiências da estética à funcionalidade. <br>
+            Acredito que o design vai muito além do visual: ele conecta pessoas, transmite propósito e resolve problemas reais.
+            Gosto de criar soluções que unem beleza, estratégia e usabilidade, sempre com foco em tornar a comunicação mais humana e acessível.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/venturacamila-/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn--ghost" href="#" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== FERRAMENTAS ================== -->
+    <section id="ferramentas" class="tools section--alt">
+      <div class="container">
+        <h2 class="section-title">Ferramentas</h2>
+
+        <div class="tools__grid">
+          <div class="tool">
+            <div class="tool__icon">
+              <img src="assets/img/icone-figma.png" alt="Figma">
+            </div>
+            <p class="tool__name">Figma</p>
+          </div>
+
+          <div class="tool">
+            <div class="tool__icon">
+              <img src="assets/img/icone-photoshop.png" alt="Adobe Photoshop">
+            </div>
+            <p class="tool__name">Photoshop</p>
+          </div>
+
+          <div class="tool">
+            <div class="tool__icon">
+              <img src="assets/img/icone-illustrator.png" alt="Adobe Illustrator">
+            </div>
+            <p class="tool__name">Illustrator</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== PORTFÓLIO ================== -->
+    <section id="projetos" class="section">
+    <div class="container">
+        <h2 class="section-title">Portfólio</h2>
+
+        <!-- Filtros -->
+        <div class="filters" role="tablist" aria-label="Filtro de projetos">
+        <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+        <button class="filter-btn" data-filter="website" role="tab">Website Design</button>
+        <button class="filter-btn" data-filter="app-mobile" role="tab">App Mobile Design</button>
+        <button class="filter-btn" data-filter="app-desktop" role="tab">App Desktop</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="portfolio-grid">
+        <!-- Exemplo de card: ajuste os data-category conforme o tipo -->
+        <article class="portfolio-card" data-category="app-mobile">
+            <img src="assets/img/thumb-1.jpg" alt="PSMECA — App Mobile" loading="lazy">
+            <footer class="card-footer">
+            <strong class="card-title">PSMECA</strong>
+            <span class="tag">App Mobile</span>
+            </footer>
+            <a class="card-hit"
+              href="https://www.figma.com/design/VyDSun25oeISjI2EACDQXE/PSMECA--Copy--Camila?node-id=0-1&t=355Icg6FfSTcIvuR-1"
+              target="_blank" rel="noopener"
+              aria-label="Abrir projeto PSMECA no Figma">Abrir</a>
+        </article>
+
+        <article class="portfolio-card" data-category="website">
+            <img src="assets/img/thumb-2.jpg" alt="Madu Nutricionista — Website" loading="lazy">
+            <footer class="card-footer">
+            <strong class="card-title">Madu Nutricionista</strong>
+            <span class="tag">Website Design</span>
+            </footer>
+            <a class="card-hit"
+              href="https://www.figma.com/design/WHJ8unIBVzZjjQthz4Qp6f/Site-Madu-Alves-Nutricionista?node-id=0-1&t=5cTGfRsWojCr3QMY-1"
+              target="_blank" rel="noopener"
+              aria-label="Abrir projeto Madu Nutricionista no Figma">Abrir</a>
+        </article>
+
+        <article class="portfolio-card" data-category="website">
+            <img src="assets/img/thumb-3.jpg" alt="Curso Português em Módulos — Landing Page" loading="lazy">
+            <footer class="card-footer">
+            <strong class="card-title">Curso Português em Módulos</strong>
+            <span class="tag">Landing Page</span>
+            </footer>
+            <a class="card-hit"
+              href="https://www.figma.com/design/8gkHkP1EzSvH1BRitL8Aoq/Landing-Page-Portugu%C3%AAs-em-M%C3%B3dulos?node-id=0-1&t=bLjoRz4u3S9rdI7R-1"
+              target="_blank" rel="noopener"
+              aria-label="Abrir projeto Curso Português em Módulos no Figma">Abrir</a>
+        </article>
+
+        <article class="portfolio-card" data-category="website">
+            <img src="assets/img/thumb-4.jpg" alt="Fants — Website Design" loading="lazy">
+            <footer class="card-footer">
+            <strong class="card-title">Fants</strong>
+            <span class="tag">Website Design</span>
+            </footer>
+            <a class="card-hit"
+              href="https://www.figma.com/design/nOZD41RZFPDARmKJ8b998s/Site-Fants?node-id=0-1&t=cd3TNoPDHikFOYi7-1"
+              target="_blank" rel="noopener"
+              aria-label="Abrir projeto Fants no Figma">Abrir</a>
+        </article>
+
+        <!-- Pode seguir com thumb-4, thumb-5, ... -->
+        </div>
+    </div>
+    </section>
+
+        <!-- ================== CONTATO ================== -->
+    <section id="contato" class="section section--alt">
+    <div class="container">
+        <h2 class="section-title">Entre em contato!</h2>
+        <p class="section-subtitle">Conectando ideias e pessoas. Vamos conversar?</p>
+
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xjkalblp" method="POST">
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="_replyto" type="email" placeholder="voce@email.com" required>
+        </div>
+
+        <div class="field">
+          <label for="telefone">Telefone</label>
+          <input id="telefone" name="telefone" type="tel" placeholder="(61) 9 9999-9999">
+        </div>
+
+        <div class="field field--full">
+          <label for="mensagem">Detalhes do projeto</label>
+          <textarea id="mensagem" name="mensagem" rows="6" placeholder="Conte um pouco sobre o que você precisa..." required></textarea>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn--primary">Enviar</button>
+        </div>
+
+        <p class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+        <nav class="footer__nav" aria-label="rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Portfólio</a>
+        <a href="#contato">Entre em contato</a>
+        </nav>
+
+        <div class="footer__contact">
+        <a href="mailto:camilaoventuralima@gmail.com" class="footer__link">camilaoventuralima@gmail.com</a>
+        <span class="footer__sep">•</span>
+        <a href="tel:+5561995198740" class="footer__link">(61) 99519-8740</a>
+        </div>
+    </div>
+    </footer>
+
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
